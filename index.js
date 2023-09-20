@@ -33,8 +33,8 @@ app.get('/contacts', (req, res) => {
  { 
 
     let id = req.params.id;  
-    console.log(`removing contact ${contact[id].name}`) 
-    contact.splice(req.params.id, 1); 
+    console.log(`removing contact ${contacts[id].name}`) 
+    contacts.splice(req.params.id, 1); 
     res.send(contact); 
 
  
